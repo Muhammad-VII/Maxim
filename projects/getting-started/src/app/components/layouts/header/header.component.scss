@@ -1,0 +1,112 @@
+.navbar-content {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.5s;
+    nav {
+        position: relative;
+        .navbar-toggler {
+            outline: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .dropdown {
+            &.active {
+                .dropdown-toggle {
+                    color: #A77F3E;
+                }
+                span {
+                    color: #A77F3E;
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+                ul {
+                    li {
+                        a.active {
+                            color: #A77F3E;
+                            background: transparent;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            span {
+                display: inline-block;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    border-radius: 5px;
+                    height: 0.08em;
+                    bottom: -5px;
+                    left: 0;
+                    background: currentcolor;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+        .nav-link {
+            @media (min-width: 992px) {
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+            }
+            color: #FFFFFF;
+            text-transform: capitalize;
+            font-size: 17px;
+            &:hover {
+                color: #A77F3E;
+            }
+            &.active {
+                span {
+                    color: #A77F3E;
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+            span {
+                display: inline-block;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    border-radius: 5px;
+                    height: 0.08em;
+                    bottom: -5px;
+                    left: 0;
+                    background: currentcolor;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.dropdown-item:focus {
+    color: #1e2125;
+    background-color: transparent;
+}
+.dropdown-item:hover {
+    color: #A77F3E;
+    background-color: transparent;
+}

@@ -1,0 +1,43 @@
+.chairman-section {
+    padding: 3rem 0;
+    .info {
+        header {
+            h4 {
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+                font-size: 20px;
+                padding-top: 20px;
+                color: #fff;
+            }
+            h2 {
+                @media (max-width: 600px) {
+                    font-size: 25px;
+                }
+                color: #F2EFC7;
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+        article {
+            @media (max-width: 600px) {
+                margin-top: 1rem;
+            }
+            margin: 2rem 0;
+            p {
+                @media (max-width: 600px) {
+                    font-size: 15px;
+                }
+                color: #fff;
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+    .chairman-img {
+        img {
+            padding-bottom: 16px;
+            border-bottom: 1.5px solid #F2EFC7;
+        }
+    }
+}

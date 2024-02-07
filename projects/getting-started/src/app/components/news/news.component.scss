@@ -1,0 +1,80 @@
+// Start Media Section
+.media-section {
+    padding: 3rem 0;
+    .content {
+        header {
+            h4 {
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+                font-size: 20px;
+                padding-top: 20px;
+                color: #fff;
+            }
+            h2 {
+                @media (max-width: 600px) {
+                    font-size: 25px;
+                }
+                color: #F2EFC7;
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+        article {
+            .media-card {
+                background-color: #242424;
+                img {
+                    height: 320px;
+                    object-fit: cover;
+                }
+                .media-body {
+                    margin-top: 15px;
+                    color: #fff;
+                    padding: 15px;
+                    padding-top: 0;
+                    time {
+                        color: #F2EFC7;
+                    }
+                    h4 {
+                        @media (max-width: 600px) {
+                            font-size: 18px;
+                        }
+                        font-family: 'Playfair Display', serif;
+                        font-size: 20px;
+                        margin-top: 8px;
+                        margin-bottom: 13px;
+                    }
+                    p {
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                        }
+                        color: #D3D3D3;
+                    }
+                    a {
+                        @media (max-width: 600px) {
+                            font-size: 17px;
+                        }
+                        all: unset;
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: #A77F3E;
+                        font-weight: 500;
+                        img {
+                            height: 40px;
+                        }
+                        span {
+                            transition: all .3s;
+                            display: inline-block;
+                        }
+                        &:hover {
+                            span {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Media Section

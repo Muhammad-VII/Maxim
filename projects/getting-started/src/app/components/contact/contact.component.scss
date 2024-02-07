@@ -1,0 +1,79 @@
+// Start Contact Section
+.contact {
+  overflow: hidden;
+  .container {
+    @media(min-width: 1200px){
+        max-width: calc(1199px + 50% - 510px);
+        padding-left: 40px;
+        padding-right: 0;
+        margin-right: inherit;
+    }
+  }
+  .content {
+      header {
+          h4 {
+              @media (max-width: 600px) {
+                  font-size: 18px;
+              }
+              font-size: 20px;
+              padding-top: 20px;
+              color: #fff;
+          }
+          h2 {
+              @media (max-width: 600px) {
+                  font-size: 25px;
+              }
+              color: #F2EFC7;
+              font-size: 32px;
+              font-family: 'Playfair Display', serif;
+          }
+      }
+      article {
+        form {
+          margin-top: 32px;
+          .form-group {
+            margin-bottom: 25px;
+            label {
+              color: #FFFFFF;
+              margin-bottom: 10px;
+            }
+            input {
+              min-height: 45px;
+              border-radius: 0;
+            }
+            textarea {
+              border-radius: 0;
+            }
+            ::placeholder {
+              color: #161616;
+            }
+            .form-control {
+              &:focus {
+                box-shadow: none;
+                border-color: #A77F3E;
+              }
+            }
+            .submit-action {
+              margin-top: 40px;
+              button {
+                background-color: #A77F3E;
+                color: #fff;
+                padding: 10px 5px;
+                min-width: 185px;
+                font-size: 18px;
+                border-radius: 0px;
+                margin-top: 15px;
+                border: 1px solid #A77F3E;
+                transition: all .3s;
+                &:hover {
+                  background-color: transparent;
+                  color: #A77F3E;
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}
+// End Contact Section

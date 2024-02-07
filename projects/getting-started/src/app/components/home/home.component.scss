@@ -1,0 +1,397 @@
+// Start Main Section
+.main-section {
+    background: url('/assets/home/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    main {
+        min-height: calc(100vh - 94px);
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        .content {
+            @media (min-width: 600px) {
+                padding: 0 15%;
+            }
+            color: #FFFFFF;
+            width: 100%;
+            header {
+                max-width: 510px;
+                h1 {
+                    @media (max-width: 600px) {
+                        font-size: 30px;
+                        line-height: 45px;
+                    }
+                    font-size: 44px;
+                    font-family: 'Playfair Display', serif;
+                    font-style: italic;
+                    margin-bottom: 30px;
+                    line-height: 65px;
+                    sup, sub {
+                        color: #F2EFC7;
+                        font-family: 'Playfair Display';
+                    }
+                }
+                h5 {
+                    @media (max-width: 600px) {
+                        font-size: 20px;
+                    }
+                    color: #fff;
+                    font-size: 24px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    span {
+                        color: #A77F3E;
+                    }
+                }
+            }
+            article {
+                .services {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 15vh;
+                    padding-top: 30px;
+                    border-top: 1px solid #ffffff28;
+                    // margin-bottom: 30px;
+                    .services-card {
+                        img {
+                            transition: all .3s;
+                        }
+                        h4 {
+                            @media (max-width: 600px) {
+                                font-size: 15px;
+                            }
+                            color: #F2EFC7;
+                            font-size: 19px;
+                            margin-top: 25px;
+                        }
+                        &:hover {
+                            img {
+                                transform: translateY(-5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Main Section
+
+// Start About Section 
+.about-section {
+    color: #fff;
+    padding: 3rem 0;
+    header {
+        h4 {
+            @media (max-width: 600px) {
+                font-size: 18px;
+            }
+            font-size: 20px;
+            padding-top: 20px;
+        }
+        h2 {
+            @media (max-width: 600px) {
+                font-size: 25px;
+            }
+            color: #F2EFC7;
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+    article {
+        p {
+            @media (max-width: 600px) {
+                font-size: 15px;
+                padding-top: 15px;
+            }
+            padding: 33px 0;
+            line-height: 30px;
+            font-size: 18px;
+            margin: 0;
+        }
+        button {
+            @media (max-width: 600px) {
+                font-size: 16px;
+            }
+            all: unset;
+            cursor: pointer;
+            font-size: 18px;
+            color: #A77F3E;
+            font-weight: 500;
+            img {
+                height: 40px;
+            }
+            span {
+                transition: all .3s;
+                display: inline-block;
+            }
+            &:hover {
+                span {
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+}
+// End About Section 
+
+// Start Statistics Section
+.statistics-section {
+    padding-bottom: 3rem;
+    .statistics-content {
+        .statistics-card {
+            background-color: #242424;
+            padding: 20px;
+            height: 100%;
+            color: #F2EFC7;
+            border-radius: 5px;
+            border: 1px solid #242424;
+            transition: all .3s;
+            &:hover {
+                border-color: #A77F3E;
+            }
+            figure {
+                img {
+                    height: 40px;
+                    margin-bottom: 15px;
+                }
+                h5 {
+                    margin-bottom: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+// End Statistics Section
+
+// Start What We Do
+.what-we-do {
+    padding: 3rem 0;
+    .content {
+        header {
+            h4 {
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+                font-size: 20px;
+                padding-top: 20px;
+                color: #fff;
+            }
+            h2 {
+                @media (max-width: 600px) {
+                    font-size: 25px;
+                }
+                color: #F2EFC7;
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+        article {
+            .card-section {
+                position: relative;
+                color: #fff;
+                cursor: pointer;
+                overflow: hidden;
+                &:hover {
+                    img {
+                        transform: scale(1.04);
+                        filter: brightness(0.5);
+                    }
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    transition: all .3s;
+                }
+                .link {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px;
+                    background: linear-gradient(360deg, rgb(0 0 0) 16%, rgb(0 0 0 / 4%) 100%);
+                    h3 {
+                        @media (max-width: 600px) {
+                            font-size: 18px;
+                        }
+                        margin: 0;
+                        font-size: 22px;
+                    }
+                    button {
+                        all: unset;
+                        cursor: pointer;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End What We Do
+
+// Start Media Section
+.media-section {
+    padding: 3rem 0;
+    .content {
+        header {
+            h4 {
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+                font-size: 20px;
+                padding-top: 20px;
+                color: #fff;
+            }
+            h2 {
+                @media (max-width: 600px) {
+                    font-size: 25px;
+                }
+                color: #F2EFC7;
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+        article {
+            a {
+                text-decoration: none;
+            }
+            .media-card {
+                cursor: pointer;
+                img {
+                    height: 245px;
+                    object-fit: cover;
+                }
+                &:hover {
+                    .media-body {
+                        border-color: #A77F3E;
+                    }
+                }
+                .media-body {
+                    padding-right: 15px;
+                    margin-top: 15px;
+                    border-right: 1px solid #ffffff2e;
+                    color: #fff;
+                    transition: all .3s;
+                    time {
+                        color: #F2EFC7;
+                    }
+                    h4 {
+                        @media (max-width: 600px) {
+                            font-size: 18px;
+                        }
+                        font-family: 'Playfair Display', serif;
+                        font-size: 20px;
+                        margin-top: 8px;
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+            .action {
+                margin-top: 2rem;
+                button {
+                    all: unset;
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: #A77F3E;
+                    font-weight: 500;
+                    img {
+                        height: 40px;
+                    }
+                    span {
+                        transition: all .3s;
+                        display: inline-block;
+                    }
+                    &:hover {
+                        span {
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Media Section
+
+// Start Get In Touch
+.get-in-touch {
+    .content {
+        background-color: #242424;
+        background-image: url('/assets/home/touch-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 55px;
+        color: #fff;
+        header {
+            h4 {
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+                font-size: 20px;
+                position: relative;
+                padding-top: 20px;
+                &:after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    top: 0;
+                    width: 70px;
+                    height: 1px;
+                    background-color: #F2EFC7;
+                }
+            }
+            h2 {
+                @media (max-width: 600px) {
+                    font-size: 25px;
+                }
+                color: #F2EFC7;
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+        article {
+            max-width: 550px;
+            margin: auto;
+            p {
+                @media (max-width: 600px) {
+                    font-size: 15px;
+                }
+                padding: 30px 0;
+                line-height: 30px;
+                font-size: 18px;
+            }
+            button {
+                all: unset;
+                cursor: pointer;
+                font-size: 18px;
+                color: #A77F3E;
+                font-weight: 500;
+                img {
+                    height: 40px;
+                }
+                span {
+                    transition: all .3s;
+                    display: inline-block;
+                }
+                &:hover {
+                    span {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+}
+// End Get In Touch

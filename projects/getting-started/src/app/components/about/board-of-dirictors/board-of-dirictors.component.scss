@@ -1,0 +1,53 @@
+.dirictors-page {
+    padding: 3rem 0;
+    header {
+        h4 {
+            @media (max-width: 600px) {
+                font-size: 18px;
+            }
+            font-size: 20px;
+            padding-top: 20px;
+            color: #fff;
+        }
+        h2 {
+            @media (max-width: 600px) {
+                font-size: 25px;
+            }
+            color: #F2EFC7;
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+    article {
+        .info {
+            @media (max-width: 600px) {
+                margin-top: 0;
+            }
+            margin-top: 2rem;
+            p {
+                color: #fff;
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        .user-img {
+            figure {
+                img {
+                    padding-bottom: 16px;
+                    border-bottom: 1.5px solid #F2EFC7;
+                }
+                figcaption {
+                    margin-top: 10px;
+                    h4 {
+                        color: #F2EFC7;
+                        font-family: 'Playfair Display', serif;
+                    }
+                    p {
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

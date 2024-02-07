@@ -1,0 +1,143 @@
+// Start Services Section
+.services-section {
+    padding: 3rem 0;
+    .content {
+        header {
+            h4 {
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+                font-size: 20px;
+                padding-top: 20px;
+                color: #fff;
+            }
+            h2 {
+                @media (max-width: 600px) {
+                    font-size: 25px;
+                }
+                color: #F2EFC7;
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+        article {
+            .card-section {
+                position: relative;
+                color: #fff;
+                cursor: pointer;
+                overflow: hidden;
+                border-bottom: 1px solid #F2EFC7;
+                &:hover {
+                    img {
+                        // transform: scale(1.04);
+                        filter: brightness(0.5);
+                    }
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    transition: all .3s;
+                }
+                .link {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px;
+                    background: linear-gradient(360deg, rgb(0 0 0) 16%, rgb(0 0 0 / 4%) 100%);
+                    h3 {
+                        @media (max-width: 600px) {
+                            font-size: 18px;
+                        }
+                        margin: 0;
+                        font-size: 22px;
+                    }
+                    button {
+                        all: unset;
+                        cursor: pointer;
+                        height: 30px;
+                    }
+                }
+            }
+            .accordion-item {
+                border: 0;
+                position: relative;
+                margin-bottom: 35px;
+                .accordion-body {
+                    background-color: #161616;
+                    color: #D3D3D3;
+                    p {
+                        @media(min-width: 600px) {
+                            font-size: 18px;
+                            line-height: 32px;
+                        }
+                    }
+                    a {
+                        @media (max-width: 600px) {
+                            font-size: 16px;
+                        }
+                        all: unset;
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: #A77F3E;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            height: 40px;
+                        }
+                        span {
+                            transition: all .3s;
+                            display: inline-block;
+                        }
+                        &:hover {
+                            span {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+                }
+                .accordion-button {
+                    padding: 0;
+                    border: 0;
+                    color: #fff;
+                    &::after {
+                        background-image: url('/assets/shared/icons/down.png');
+                        background-size: contain;
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        z-index: 999;
+                        padding: 15px;
+                    }
+                    img {
+                        @media(max-width: 600px) {
+                            min-height: 150px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .services-card {
+                    img {
+                        height: 40px;
+                        width: auto;
+                        margin: 20px 0;
+                        max-width: 130px;
+                    }
+                    button {
+                        img {
+                            width: 30px;
+                            height: auto;
+                            display: inherit;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Services Section

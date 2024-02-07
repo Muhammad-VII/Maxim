@@ -1,0 +1,226 @@
+<!-- Start Services Section -->
+<section class="services-section">
+    <div class="container">
+        <div class="content">
+            <header>
+                <h4>Services</h4>
+                <h2 data-wow-delay="0.5s" data-wow-duration="1s" class="wow fadeInUp" style="visibility: hidden; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">What We Do</h2>
+            </header>
+            <article>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <div class="card-section h-100" id="headingOne">
+                            <button (click)="firstCollapseToggle()" class="accordion-button" type="button">
+                                <img src="assets/services/devlopment.png" alt="" srcset="">
+                                <div class="link">
+                                    <h3>Development</h3>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse-one">
+                            <div class="accordion-body px-0 collapseble">
+                                <p>
+                                    For more than 40 years, Maxim Development has adopted a visionary strategy for trendsetting projects, turning potential opportunities into staggering reality, as Maxim Development specializes in constructing the perfect dream home for its various clients With its vast portfolio, Maxim Development has marked its status as a leading entity in the real estate industry, introducing Royal Maxim, Maxim Residence, Heliopolis Residential Towers, Maxim Country Club, and finally, the North Coast’s ultimate destination, Bo Sidi Abdelrahman
+                                </p>
+                                <a href="https://maxim-development.com/" target="_blank">
+                                    <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                    <span class="mx-2">
+                                        Know More
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item collapse-two">
+                        <div class="card-section h-100" id="headingTwo">
+                            <button class="accordion-button" type="button" (click)="secondCollapseToggle()">
+                                <img src="assets/services/services2.png" alt="" srcset="">
+                                <div class="link">
+                                    <h3>Hospitality</h3>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapseble">
+                            <div class="accordion-body p-0">
+                                <owl-carousel-o class="carousel-img" [options]="customOptions2">
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/Logo.png" alt="" srcset="">
+                                            <p>
+                                                HotelHub is a hotel booking platform designed for Travel Management Companies for managing business travel. The platform includes an intuitive booking tool for agents that ...
+                                            </p>
+                                            <button>
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/hotel-hub.png" alt="" srcset="">
+                                            <p>
+                                                Maxim Hospitality was founded in 2020, to fill the gap that has been present in the past years due to the challenges faced in the hospitality sector, along with revolutionizing the hospitality ….
+                                            </p>
+                                            <a href="https://hotelhub.ae/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/hostpitality.png" alt="" srcset="">
+                                            <p>
+                                                Our privately owned luxurious 5-star hotel, managed by Kempinski Hotels, stands at the heart of the lavish mansions. This magnificent construction pacifies the eyes and inspires 
+                                            </p>
+                                            <a href="https://maxim-hospitality.web.app/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/royal.png" alt="" srcset="">
+                                            <p>Located in one of the most prime locations in the 5th Settlement, Maxim Mall offers a unique shopping experience, with an impressive 57,000 sqm of built up area, 5 floors</p>
+                                            <a href="https://www.kempinski.com/en/cairo/royal-maxim-palace-kempinski-cairo/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                </owl-carousel-o>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item collapse-four">
+                        <div class="card-section h-100" id="headingFour">
+                            <button (click)="fourthCollapseToggle()" class="accordion-button" type="button">
+                                <img src="assets/services/commerical.png" alt="" srcset="">
+                                <div class="link">
+                                    <h3> Commercial Centers</h3>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapseble">
+                            <div class="accordion-body">
+                                <owl-carousel-o class="carousel-img" [options]="customOptions2">
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/Logo.png" alt="" srcset="">
+                                            <p>Located in one of the most prime locations in the 5th Settlement, Maxim Mall offers a unique shopping experience, with an impressive 57,000 sqm of built up area, 5 floors</p>
+                                            <a href="https://maximmall.web.app/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/traffic.png" alt="" srcset="">
+                                            <p>
+                                                Traffic is the perfect convenience store to visit. With multiple branches all over Cairo, Traffic offers the best coffee in town, a relaxing atmosphere to hangout in the morning
+                                            </p>
+                                            <a href="https://trafficstores.com/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/lnx.png" alt="" srcset="">
+                                            <p>
+                                                Legend of the Nile provides an unparalleled focus on private aviation safety permeates in every aspect of our business. Our service-oriented culture seeks to enhance the life of
+                                            </p>
+                                            <a href="https://lnx-avia.com/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                </owl-carousel-o>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item collapse-three">
+                        <div class="card-section h-100" id="headingThree">
+                            <button class="accordion-button" type="button" (click)="thirdCollapseToggle()">
+                                <img src="assets/services/services.png" alt="" srcset="">
+                                <div class="link">
+                                    <h3>Business Solutions</h3>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapseble">
+                            <div class="accordion-body">
+                                <owl-carousel-o class="carousel-img" [options]="customOptions2">
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/emojii.png" alt="" srcset="">
+                                            <p>
+                                                As a Software service provider for web applications & mobile apps, EmojiTech takes pride in playing an important role in helping businesses to establish a strong online presence..
+                                            </p>
+                                            <a href="https://emojiit.com/#/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/education.png" alt="" srcset="">
+                                            <p>
+                                                Macat is a world leader in critical thinking solutions that transform the way people learn, work and live. For the first time in Egypt, Maxim Investment Group partnered with Macat
+                                            </p>
+                                            <a href="https://www.macat.com/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                        <div class="services-card">
+                                            <img src="assets/services/mc.png" alt="" srcset="">
+                                            <p>
+                                                Maxim Consultancy consists of a diverse group of experts that provide innovative solutions to business problems. From strategy evaluation to project implementation
+                                            </p>
+                                            <a href="https://emoji-mc.web.app/#/" target="_blank">
+                                                <img src="assets/shared/icons/arrow.png" alt="" srcset="">
+                                                <span class="mx-2">
+                                                    Know More
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </ng-template>  
+                                </owl-carousel-o>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- End Services Section -->
